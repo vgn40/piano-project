@@ -1,5 +1,5 @@
 const pianoKeys = document.querySelectorAll('.piano-keys .key'),
-volumeSlider = document.querySelector('.volume-slider input'),
+    volumeSlider = document.querySelector('.volume-slider input'),
     keysCheckbox = document.querySelector('.keys-checkbox input');
 
 let allKeys = [],
@@ -9,8 +9,8 @@ const playTune = (key) => {
     const audioSrc = `tunes/${key}.wav`;
     audio.src = audioSrc;
     audio.addEventListener("error", function() {
-        console.error("Error loading audio:", audioSrc);
-        alert("Error loading audio. Please check the file path.");
+        console.error("Error", audioSrc);
+        alert("Error");
     });
 
     if (key) {
