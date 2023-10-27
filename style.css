@@ -43,8 +43,8 @@ header .column span{
 }
 
 .keys-checkbox input{
-    width: 30px;
-    height: 60px;
+    width: 50px;
+    height: 30px;
     cursor: pointer;
     position: relative;
     appearance: none;
@@ -54,10 +54,10 @@ header .column span{
 
 .keys-checkbox input::before {
     content: "";
-    height: 20px;
-    width: 20px;
-    top: 50%;
-    left: 5px;
+    height: 25px;
+    width: 25px;
+    top: 10%;
+    left: 15px;
     border-radius: inherit;
     position: absolute;
     background: #8c8c8c;
@@ -104,11 +104,11 @@ text-transform: uppercase;}
 
 .piano-keys .key span {
     position: relative;
-    bottom: 20px;
     width: 100%;
     color: #A2A2A2;
     font-size: 1.13rem;
     text-align: center;
+    z-index: 99;
 }
 
 .piano-keys .key.hide span {
@@ -116,6 +116,28 @@ text-transform: uppercase;}
 }
 
 .piano-keys .black span{
-    bottom: 13px;
     color: #888888;
+    margin-left: 15px;
+    top: 5px;
+}
+.piano-keys .white span{
+    top: 195px;
+    margin-left: 26px;
+}
+
+.tutorialDisplay {
+    position: absolute;
+    width: 80%;
+    background: #f2f2f2;
+    z-index: 999;
+    height: 20%;
+    text-align: center;
+    display: none;
+    padding-top: 50px;
+    }
+
+#tutorial-button-hide {
+    width: 10%;
+    height: 30px;
+    margin-top: 20px;
 }

@@ -1,6 +1,9 @@
 const pianoKeys = document.querySelectorAll('.piano-keys .key'),
     volumeSlider = document.querySelector('.volume-slider input'),
-    keysCheckbox = document.querySelector('.keys-checkbox input');
+    keysCheckbox = document.querySelector('.keys-checkbox input'),
+    tutorialDisplay = document.querySelector('.tutorialDisplay'),
+    tutorialButton = document.querySelector('#tutorial-button'),
+    tutorialHide = document.querySelector('#tutorial-button-hide');
 
 let allKeys = [],
     audio = new Audio(`tunes/a.wav`);
@@ -50,6 +53,18 @@ const pressedKey = (e) => {
         playTune(e.key)}
 }
 
+
+const showTutorial = () => {
+    tutorialDisplay.style.display = "block";
+}
+
+const hideTutorial = () => {
+    tutorialDisplay.style.display = "none";
+}
+
+tutorialButton.addEventListener("click", showTutorial);
+tutorialHide.addEventListener("click", hideTutorial);
 keysCheckbox.addEventListener("click", showHideKeys);
 volumeSlider.addEventListener("input", handleVolume);
 document.addEventListener("keydown", pressedKey);
+
