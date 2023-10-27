@@ -9,22 +9,22 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #e3f2fd;
+    background: #dddbf1;
 }
 
 .wrapper{
     border-radius: 20px;
     padding: 35px 40px;
-    background: #141414;
+    background: #0e0f19;
 }
 .wrapper header {
-    color: #b2b2b2;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between}
 
 header h2 {
-    font-size: 3.5rem
+    font-size: 1.5rem
 }
 
 header .column{
@@ -86,12 +86,12 @@ header .column span{
     height: 140px;
     margin: 0 -22px 0 -22px;
     border-radius: 0 0 5px 5px;
-    background: linear-gradient(#333, #000);
+    background: #000000;
 }
 
 .piano-keys .black.active {
     box-shadow: inset -5px -10px rgba(255,255,255,0.1);
-    background:linear-gradient(to bottom, #000, #434343);
+    background: #b2b2b2;
 }
 
 .piano-keys .white {
@@ -99,7 +99,11 @@ header .column span{
     width: 70px;
     border-radius: 8px;
     border: 1px solid #000;
-    background: linear-gradient(#fff 96%, #eee 4%);
+    background: #fff;
+}
+
+.piano-keys .white.active {
+    background: #b2b2b2;
 }
 
 .piano-keys .key span {
@@ -134,6 +138,7 @@ header .column span{
     text-align: center;
     display: none;
     padding-top: 50px;
+    border-radius: 10px;
 }
 
 #tutorial-button-hide {
@@ -141,3 +146,5 @@ header .column span{
     height: 30px;
     margin-top: 20px;
 }
+
+#tutorial-button {padding: 5px}
