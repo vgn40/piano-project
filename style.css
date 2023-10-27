@@ -49,7 +49,7 @@ header .column span{
     position: relative;
     appearance: none;
     border-radius: 30px;
-    background: #4b4b4b;
+    background: #333;
 }
 
 .keys-checkbox input::before {
